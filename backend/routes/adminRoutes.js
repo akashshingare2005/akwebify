@@ -24,3 +24,14 @@ router.get("/create-admin", async (req,res)=>{
   res.send("Admin created");
 });
 
+
+
+router.get("/reset-admin", async (req,res)=>{
+ const bcrypt = (await import("bcryptjs")).default;
+ const hash = await bcrypt.hash("admin123",10);
+ await Admin.findOneAndUpdate(
+   { username:"admin" },
+   { password:hash }
+ );
+ res.send("Password Reset Done");
+});

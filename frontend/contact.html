@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | AkWebify</title>
-<link rel="stylesheet" href="contact.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | AkWebify</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 
 <body>
 
-<section class="contact-section">
-
-  <div class="contact-card">
-
-    <!-- LEFT -->
-    <div class="contact-info">
-      <h1>Let's Build Something Amazing 🚀</h1>
-      <p>Tell me about your project and I’ll get back to you quickly.</p>
-
-      <div class="info-box">
-        <span>📧</span> admin@akwebify.com
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><span class="logo-primary">Ak</span>Webify</a>
       </div>
-      <div class="info-box">
-        <span>🌍</span> www.akwebify.vercel.app
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="nav-cta active">Hire Me</a>
       </div>
     </div>
+  </nav>
 
-    <!-- RIGHT -->
-    <form>
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <h1 class="section-title">Contact Me</h1>
+      <p class="section-subtitle">
+        Have a project in mind? Let’s work together.
+      </p>
 
-      <h2>Contact Form</h2>
+      <form class="contact-form">
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          required
+        />
 
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Describe your project..." required></textarea>
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          required
+        />
 
-      <button type="submit">
-        🚀 Send Message
-      </button>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Describe your project"
+          required
+        ></textarea>
 
-    </form>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </section>
 
-  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 AkWebify. All rights reserved.</p>
+    </div>
+  </footer>
 
-</section>
-
-<script src="js/form-handler.js"></script>
+  <!-- JS (VERY IMPORTANT) -->
+  <script src="js/form-handler.js"></script>
 
 </body>
 </html>
-
