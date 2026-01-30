@@ -1,4 +1,4 @@
-const API_URL = "https://akwebify-backend.onrender.com/api/orders";
+const API_URL = "https://akwebify.onrender.com/api/orders";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
