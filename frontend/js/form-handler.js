@@ -1,3 +1,5 @@
+const API_URL = "https://akwebify-backend.onrender.com/api/orders";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
 
@@ -7,16 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // 🔥 PAGE REFRESH STOP
+    e.preventDefault();
 
     const name = document.querySelector("#name")?.value;
     const email = document.querySelector("#email")?.value;
     const message = document.querySelector("#message")?.value;
 
-    console.log("📨 Sending data:", { name, email, message });
-
     try {
-      const res = await fetch("http://localhost:5000/api/orders", {
+      const res = await fetch(API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       const data = await res.json();
-      console.log("✅ Server response:", data);
 
       if (data.success) {
         alert("✅ Message sent successfully!");
