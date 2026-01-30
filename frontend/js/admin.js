@@ -2,7 +2,10 @@ document.addEventListener("DOMContentLoaded",()=>{
   const token=localStorage.getItem("adminToken");
   if(!token) return;
 
-  fetch("/api/orders",{headers:{Authorization:`Bearer ${token}`}})
+  fetch("https://akwebify.onrender.com/api/orders",{
+  headers:{Authorization:`Bearer ${token}`}
+})
+
     .then(r=>r.json())
     .then(d=>{
       const table=document.getElementById("ordersTable");
