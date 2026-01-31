@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About | AkWebify</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
+<meta charset="UTF-8">
+<title>About | AkWebify</title>
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
+
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <div class="logo"><a href="index.html"><span class="logo-primary">Ak</span>Webify</a></div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html" class="nav-cta">Hire Me</a>
+<header class="navbar">
+  <h2 class="logo">AkWebify</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a class="hire-btn" href="contact.html">Hire Me</a>
+  </nav>
+</header>
+
+<section class="about-section">
+
+  <div class="about-card">
+
+    <div class="profile">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.aKyvePB49HL4AVkSxTTt0QHaEK?pid=Api&P=0&h=180" alt="profile">
+      <h1>Hi, I'm Akash 👋</h1>
+      <p class="subtitle">
+        Freelance Web Developer building fast, responsive & business-ready websites.
+      </p>
     </div>
-    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+
+    <div class="grid">
+
+      <!-- Skills -->
+      <div class="box">
+        <h3><i class="fa-solid fa-code"></i> Skills</h3>
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+          <span>Git</span>
+          <span>Vercel</span>
+        </div>
+      </div>
+
+      <!-- Why Me -->
+      <div class="box">
+        <h3><i class="fa-solid fa-star"></i> Why Choose Me?</h3>
+        <ul>
+          <li>Clean & Modern UI</li>
+          <li>Mobile Friendly Design</li>
+          <li>Fast Delivery</li>
+          <li>Affordable Pricing</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="box">
+        <h3><i class="fa-solid fa-envelope"></i> Contact</h3>
+        <p>📧 akashshingare217@gmail.com</p>
+        <p>📱 9689861125</p>
+      </div>
+
+    </div>
+
   </div>
-</nav>
 
-<section>
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m Akash – a freelance web developer who builds fast, responsive,
-      and business-ready websites using modern technologies.
-    </p>
-
-    <h3>Skills</h3>
-    <p>HTML, CSS, JavaScript, Node.js, Express, MongoDB, Git, Vercel</p>
-
-
-    <h3>Why Choose Me?</h3>
-    <ul>
-      <li>Clean & modern UI</li>
-      <li>Mobile-friendly websites</li>
-      <li>Affordable pricing</li>
-      <li>Fast delivery</li>
-    </ul>
-
-    <h3>Contact</h3>
-    <p>
-📧 Email: akashshingare217@gmail.com <br>
-📱 WhatsApp: 9689861125
-</p>
-
-  </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-bottom">© 2024 AkWebify</div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
 </body>
 </html>
-
