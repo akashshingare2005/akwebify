@@ -563,9 +563,6 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 220px;
   border-radius: 16px 16px 0 0;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .portfolio-content {
@@ -707,15 +704,6 @@ h1, h2, h3, h4 {
   justify-content: center;
   font-size: 1.5rem;
   margin-bottom: 15px;
-}
-
-.about-photo {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .about-card h4 {
@@ -911,12 +899,6 @@ textarea.form-input {
   margin: 0 auto 15px;
 }
 
-.contact-icon-image {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-}
-
 .info-card h4 {
   font-size: 1.1rem;
   margin-bottom: 10px;
@@ -1028,68 +1010,4 @@ textarea.form-input {
   border-top: 1px solid var(--card-border);
   padding-top: 20px;
   font-size: 0.9rem;
-}
-
-@media (max-width: 900px) {
-  .hero-content,
-  .about-content,
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
-
-  .hero {
-    padding: 120px 0 70px;
-  }
-
-  .hero-title {
-    font-size: 2.4rem;
-  }
-
-  .hero-visual {
-    height: 340px;
-  }
-
-  .nav-toggle {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    gap: 16px;
-    padding: 18px 20px 24px;
-    background: rgba(15, 23, 42, 0.96);
-    border-bottom: 1px solid var(--card-border);
-    transform: translateY(-120%);
-    opacity: 0;
-    pointer-events: none;
-    transition: var(--transition);
-  }
-
-  .nav-menu.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-title {
-    font-size: 1.95rem;
-  }
-
-  .hero-stats {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .services-grid,
-  .portfolio-grid,
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
 }

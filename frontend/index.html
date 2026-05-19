@@ -3,101 +3,542 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AkWebify | Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <title>Akash Shingare - Full Stack Developer & Web Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ===== NAVBAR ===== -->
 <nav class="navbar">
-  <div class="container">
-    <div class="logo">
-      <a href="index.html"><span class="logo-primary">Ak</span>Webify</a>
+  <div class="nav-container">
+    <div class="nav-brand">
+      <span class="logo-icon">👨‍💻</span>
+      <span class="logo-text">Akash</span>
     </div>
-    <div class="nav-links" id="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html" class="nav-cta">Hire Me</a>
-    </div>
-    <button class="menu-toggle" id="menu-toggle">
-  <i class="fas fa-bars"></i>
-</button>
+    
+    <button class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
+    <div class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link nav-cta">Get In Touch</a>
+    </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
   <div class="container">
     <div class="hero-content">
-      <h1 class="animate-slide-up">
-        I build <span class="gradient-text">modern websites</span><br>that grow your business
-      </h1>
-      <p class="animate-slide-up delay-1">
-        Freelance full-stack web developer for startups & businesses.
-      </p>
-      <div class="hero-buttons animate-slide-up delay-2">
-        <a href="contact.html" class="btn btn-primary">Hire Me</a>
-        <a href="services.html" class="btn btn-secondary">View Services</a>
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Projects
+        </div>
+        
+        <h1 class="hero-title">
+          Build Your Digital<br>
+          <span class="gradient-text">Presence Today</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          I'm a full-stack developer specializing in creating beautiful, functional, and high-converting websites for freelancers and businesses. Let's turn your vision into reality.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Start Your Project
+          </a>
+          <a href="#portfolio" class="btn btn-secondary">
+            <i class="fas fa-briefcase"></i> View My Work
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>10+</h4>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h4>8+</h4>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-item">
+            <h4>2+</h4>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-card card-1">
+          <div class="card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Modern, scalable solutions</p>
+        </div>
+        
+        <div class="floating-card card-2">
+          <div class="card-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful interfaces</p>
+        </div>
+
+        <div class="floating-card card-3">
+          <div class="card-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Performance</h3>
+          <p>Lightning fast</p>
+        </div>
+
+        <div class="hero-decoration">
+          <div class="decoration-blob"></div>
+          <div class="decoration-circle"></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<section class="stats">
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services" id="services">
   <div class="container">
-    <div class="stat-card">
-      <h3 class="stat-number" data-count="10">2</h3>
-      <p>Demo Projects</p>
+    <div class="section-header">
+      <h2 class="section-title">Services I Offer</h2>
+      <p class="section-subtitle">Comprehensive solutions tailored to your business needs</p>
     </div>
-    <div class="stat-card">
-      <h3 class="stat-number" data-count="100">98%</h3>
-      <p>% Client Satisfaction</p>
-    </div>
-    <div class="stat-card">
-      <h3 class="stat-number" data-count="5">0</h3>
-      <p>Tech Stack</p>
+
+    <div class="services-grid">
+      <div class="service-card glass-effect">
+        <div class="service-icon gradient-bg-1">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3>Web Design</h3>
+        <p>Beautiful, responsive web designs that capture your brand essence and engage your audience.</p>
+        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card glass-effect">
+        <div class="service-icon gradient-bg-2">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Web Development</h3>
+        <p>Clean, efficient code with modern frameworks. Fast, scalable, and SEO-optimized websites.</p>
+        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card glass-effect">
+        <div class="service-icon gradient-bg-3">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <h3>E-Commerce</h3>
+        <p>Complete e-commerce solutions with payment integration, inventory management, and more.</p>
+        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card glass-effect">
+        <div class="service-icon gradient-bg-4">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Mobile Friendly</h3>
+        <p>Fully responsive designs that work perfectly on all devices and screen sizes.</p>
+        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card glass-effect">
+        <div class="service-icon gradient-bg-5">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3>SEO Optimization</h3>
+        <p>Boost your online visibility with proven SEO strategies and best practices.</p>
+        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card glass-effect">
+        <div class="service-icon gradient-bg-6">
+          <i class="fas fa-headset"></i>
+        </div>
+        <h3>24/7 Support</h3>
+        <p>Ongoing maintenance, updates, and support to keep your website running smoothly.</p>
+        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ===== PORTFOLIO SECTION ===== -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Showcasing my best work and creative solutions</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card glass-effect">
+        <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="portfolio-content">
+          <h3>E-Commerce Platform</h3>
+          <p>Full-stack marketplace with product management, shopping cart, and payment processing.</p>
+          <div class="portfolio-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Stripe</span>
+          </div>
+          <a href="#" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card glass-effect">
+        <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="portfolio-content">
+          <h3>SaaS Dashboard</h3>
+          <p>Analytics dashboard with real-time data visualization, user management, and reporting.</p>
+          <div class="portfolio-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Charts</span>
+          </div>
+          <a href="#" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card glass-effect">
+        <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="portfolio-content">
+          <h3>Booking System</h3>
+          <p>Appointment booking platform with calendar integration, notifications, and payments.</p>
+          <div class="portfolio-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Google Calendar</span>
+            <span class="tag">Twilio</span>
+          </div>
+          <a href="#" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card glass-effect">
+        <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="portfolio-content">
+          <h3>Portfolio Website</h3>
+          <p>Modern freelancer portfolio with smooth animations, email integration, and testimonials.</p>
+          <div class="portfolio-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive</span>
+          </div>
+          <a href="#" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card glass-effect">
+        <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="portfolio-content">
+          <h3>Blog Platform</h3>
+          <p>Content management system with SEO optimization, categories, and search functionality.</p>
+          <div class="portfolio-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">API</span>
+          </div>
+          <a href="#" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card glass-effect">
+        <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1611532736579-6b16e2b50449?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="portfolio-content">
+          <h3>Social Media App</h3>
+          <p>Real-time social platform with messaging, notifications, and user profiles.</p>
+          <div class="portfolio-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">Push Notifications</span>
+          </div>
+          <a href="#" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+        </div>
+        
+        <p>I'm a passionate full-stack developer with a creative eye for design. With over 2 years of experience, I've helped businesses transform their ideas into stunning digital products.</p>
+        
+        <p>I specialize in building modern, responsive websites and applications that not only look great but also deliver results. My approach combines clean code, intuitive design, and user-focused development.</p>
+
+        <div class="skills-section">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">Frontend</span>
+              <div class="skill-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>React</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Backend</span>
+              <div class="skill-tags">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>Python</span>
+                <span>API Design</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Database</span>
+              <div class="skill-tags">
+                <span>MongoDB</span>
+                <span>PostgreSQL</span>
+                <span>Firebase</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Tools</span>
+              <div class="skill-tags">
+                <span>Git</span>
+                <span>Docker</span>
+                <span>Figma</span>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">Work With Me</a>
+      </div>
+
+      <div class="about-visual">
+        <div class="about-card glass-effect">
+          <img class="about-photo" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80" alt="Quality software development" loading="lazy">
+          <div class="about-icon gradient-bg-1">
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>Quality First</h4>
+          <p>Every project is crafted with attention to detail and a commitment to excellence.</p>
+        </div>
+
+        <div class="about-card glass-effect">
+          <div class="about-icon gradient-bg-2">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4>Client Focused</h4>
+          <p>Your success is my success. I work closely with you to achieve your goals.</p>
+        </div>
+
+        <div class="about-card glass-effect">
+          <div class="about-icon gradient-bg-3">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h4>Fast Delivery</h4>
+          <p>Efficient workflows and proven processes ensure timely project completion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="section-subtitle">Ready to bring your project to life? Get in touch with me today.</p>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-form-container glass-effect">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input 
+              type="text" 
+              id="name" 
+              placeholder="Your Full Name" 
+              required
+              class="form-input"
+            >
+            <span class="form-error" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="email" 
+              id="email" 
+              placeholder="Your Email Address" 
+              required
+              class="form-input"
+            >
+            <span class="form-error" id="email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="text" 
+              id="subject" 
+              placeholder="Project Title" 
+              required
+              class="form-input"
+            >
+            <span class="form-error" id="subject-error"></span>
+          </div>
+
+          <div class="form-group">
+            <textarea 
+              id="message" 
+              placeholder="Tell me about your project..." 
+              rows="5" 
+              required
+              class="form-input"
+            ></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-card glass-effect">
+          <div class="info-icon gradient-bg-1">
+            <img class="contact-icon-image" src="https://img.icons8.com/fluency/96/new-post.png" alt="Email icon" loading="lazy">
+          </div>
+          <h4>Email</h4>
+          <a href="mailto:akashshingare217@gmail.com">akashshingare217@gmail.com</a>
+        </div>
+
+        <div class="info-card glass-effect">
+          <div class="info-icon gradient-bg-2">
+            <img class="contact-icon-image" src="https://img.icons8.com/fluency/96/phone.png" alt="Phone icon" loading="lazy">
+          </div>
+          <h4>Phone</h4>
+          <a href="tel:+919689861125">+91 9689 861 125</a>
+        </div>
+
+        <div class="info-card glass-effect">
+          <div class="info-icon gradient-bg-3">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h4>Location</h4>
+          <p>Pune, India</p>
+        </div>
+
+        <div class="info-card glass-effect">
+          <div class="info-icon gradient-bg-4">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h4>Availability</h4>
+          <p>Available for Freelance Projects</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
 <footer class="footer">
   <div class="container">
     <div class="footer-content">
-      <div>
-        <h3><span class="logo-primary">Ak</span>Webify</h3>
-        <p>Modern websites for modern businesses.</p>
+      <div class="footer-section">
+        <div class="footer-brand">
+          <span class="logo-icon">👨‍💻</span>
+          <h3>Akash Shingare</h3>
+        </div>
+        <p>Full-Stack Developer | Web Designer | Digital Solutions</p>
+        <div class="social-links">
+          <a href="https://instagram.com/akkki_217" target="_blank" title="Instagram" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" title="LinkedIn" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank" title="GitHub" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" target="_blank" title="Twitter" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
       </div>
-      <div>
-        <h4>Quick Links</h4>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div>
-        <h4>Contact</h4>
-        <p>akashshingare217@gmail.com</p>
-        <p>9689861125</p>
-        <p>Follow instagram : Akkki_217</p>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Web Design</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">E-Commerce</a></li>
+          <li><a href="#services">Mobile Friendly</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:akashshingare217@gmail.com">Email Me</a></li>
+          <li><a href="tel:+919689861125">Call Me</a></li>
+          <li><a href="#contact">Send Message</a></li>
+          <li><a href="https://instagram.com/akkki_217" target="_blank">Instagram</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-bottom">© 2024 AkWebify</div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Akash Shingare. All rights reserved. | Designed & Developed with <i class="fas fa-heart"></i> by Myself</p>
+    </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/form-handler.js"></script>
 <script src="js/animations.js"></script>
+
 </body>
 </html>
 

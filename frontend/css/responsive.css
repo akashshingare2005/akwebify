@@ -1,7 +1,137 @@
-@media(max-width:768px){
-  h1{font-size:2.2rem}
-  .nav-links{display:none;flex-direction:column}
-  .menu-toggle{display:block}
-  .hero-buttons{flex-direction:column}
+﻿/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 1024px) {
+  .hero-content,
+  .about-content,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero {
+    padding: 120px 0 72px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    height: 340px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px 20px 24px;
+    background: rgba(15, 23, 42, 0.97);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .services-grid,
+  .portfolio-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .hero {
+    padding: 108px 0 56px;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    margin-bottom: 36px;
+  }
+
+  .section-title {
+    font-size: 1.72rem;
+  }
+
+  .about,
+  .services,
+  .portfolio,
+  .contact {
+    padding: 72px 0;
+  }
+
+  .contact-form-container {
+    padding: 24px 16px;
+  }
+
+  .footer {
+    padding-top: 44px;
+  }
+
+  .footer-content {
+    gap: 26px;
+  }
+}
